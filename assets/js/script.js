@@ -13,8 +13,8 @@ $(function () {
     event.preventDefault();
     // save user input in local storage
     var userInput = {
-      id: this.parent().id,
-      input: this.prev().val()
+      id: $(this).parent().attr('id'),
+      input: $(this).prev().val()
     }
     localStorage.setItem(userInput.id, JSON.stringify(userInput));
   });
@@ -28,6 +28,7 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
+  
   // TODO: Add code to display the current date in the header of the page.
   var today = dayjs();
   $('#currentDay').text(today.format('dddd, MMMM D'));
