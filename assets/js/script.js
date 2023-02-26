@@ -27,7 +27,17 @@ $(function () {
   // current hour in 24-hour time?
   // use Day.js to get the current hour in 24-hour time
   var currentHour = dayjs().format('HH');
-
+  var containerId = ["hour-9", "hour-10", "hour-11","hour-12","hour-13","hour-14","hour-15","hour-16","hour-17"];
+  for (var i = 0; i < containerId.length; i++) {
+    if (i + 9 < currentHour) {
+      $('#'+containerId[i]).addClass('past');
+      // === doesn't work
+    } else if (i + 9 == currentHour) {
+      $('#'+containerId[i]).addClass('present');
+    } else {
+      $('#'+containerId[i]).addClass('future');
+    }
+  }
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
