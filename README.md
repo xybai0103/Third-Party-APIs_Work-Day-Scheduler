@@ -2,52 +2,48 @@
 
 ## Description
 
-This application is 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This is a daily-planner application. Users can add important events for each of standard business hours (9am-5pm) of the day. The importamt events can be saved for later review. Indicated by colors of the timeblocks, users can tell whether an important event is in the past, presenet, or future.
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
 
 ## Installation
 
 N/A
 
+
 ## Usage
 
-* W
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+* When users open the planner, the current day is displayed at the top of the calendar.
+
+* When scrolling down, timeblocks for standard business hours are presented. The colors of the timeblocks indicate whether it is in the past (grey), present (red), or future(green).
+
+* Users click into a timeblock to enter an event. By clicking the save button for that timeblock, the event is saved in local storage
+and will persit after refreshing the page.
 
 
 ## Sreenshot
 
 The following image demonstrates the application appearance:
 
-![ScreenShot](./assets/images/04-webAPIs-codeQuiz-1.png)
+![ScreenShot](./assets/images/thirdPartyAPIs-workDayScheduler.png)
+
 
 ## Link to the website
 
 https://xybai0103.github.io/thirdPartyAPIs-workDayScheduler/
 
+
+## Library used
+* [jQuery](https://jquery.com/)
+* [Day.js](https://day.js.org/en/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+
+
 ## Credits
 
 N/A
+
 
 ## Licencse
 
