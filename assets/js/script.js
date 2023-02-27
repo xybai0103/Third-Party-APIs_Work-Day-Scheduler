@@ -3,6 +3,7 @@
 // in the html.
 $(function () {
   // Display the current date in the header of the page
+  //* if not run first, header would not display before saving some user input
   var today = dayjs();
   $('#currentDay').text(today.format('dddd, MMMM D'));
 
